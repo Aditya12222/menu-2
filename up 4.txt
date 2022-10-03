@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant menu</title>
+    <link rel="stylesheet" href="assests/style.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222;
+}
+
+.main {
+    width: 1170px;
+    margin: 100px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title h2 {
+    text-transform: capitalize;
+    font-size: 35px;
+    postion: relative;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.section-title h2:before {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #00875c;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.menus {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-column {
+    width: 31%;
+}
+
+.menu-column h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 13px;
+}
+
+.menu-column h4:before {
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #00875c;
+    bottom: 0;
+}
+
+.single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.single-menu .menu-content h5 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px dashed #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.single-menu .menu-content h5 span {
+    color: blue;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.single-menu idly {
+    border-radius: 100%;
+    max-width: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    margin-right: 19px;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="section-title">
+            <h2>Our menu</h4>
+            <p>Today's menu is intetresting and tasty</p>
+        </div>
+        <div class="menus">
+            <div class="menu-column">
+                <h4>breakfast</h4>
+                <div class="single-menu">
+                    <img src="https://th.bing.com/th/id/OIP.cKNvO3ZfLbiVJ-HR8mXwnwHaFj?pid=ImgDet&rs=1"width="200" height="200"alt="">
+                    <div class="menu-content">
+                        <h5>focaccia<span>$50</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://static01.nyt.com/images/2014/02/19/dining/19JPFLEX1/19JPFLEX1-superJumbo.jpg"width="200" height="200" alt="">
+                    <div class="menu-content">
+                        <h5>ribollita <span>$50</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="single-menu">
+                    <img src="https://th.bing.com/th/id/OIP.dubjsR29IYXvxc1vxO1QlgHaHa?pid=ImgDet&rs=1"width="200" height="200" alt="">
+                    <div class="menu-content">
+                        <h5>proscuitto di parma<span>$50</span></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <h4>lunch</h4>
+                    <div class="single-menu">
+                        <img src="https://th.bing.com/th/id/OIP.aJ_h5ur2XdpoTacJ1S-7-AHaFj?pid=ImgDet&rs=1"width="200" height="200" alt="">
+                        <div class="menu-content">
+                            <h5>lasagne<span>$50</span></h5>
+                            <p</p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="https://th.bing.com/th/id/OIP.LQ6bkMMZN9-cOe6R6yWFeQHaLH?pid=ImgDet&rs=1" alt="">
+                        <div class="menu-content">
+                            <h5>gnochhi <span>$50</span></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="assets/img/meals.webp"width="200" height="200" alt="">
+                        <div class="menu-content">
+                            <h5>meals <span>$50</span></h5>
+                            <p</p>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <h4>dinner</h4>
+                        <div class="single-menu">
+                            <img src="https://th.bing.com/th/id/OIP.txlMUe14D7dyA5UANv8tFgHaJ4?pid=ImgDet&rs=1"width="200" height="200" alt="">
+                            <div class="menu-content">
+                                <h5>spaghetti alla carbonora<span>$50</span></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="https://th.bing.com/th/id/OIP.g3CcBWm2kDa5MVhu5eE5oQHaHd?pid=ImgDet&rs=1"width="200" height="200" alt="">
+                            <div class="menu-content">
+                                <h5>pizza margherita<span>$50</span></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="single-menu">
+                            <img src="https://th.bing.com/th/id/OIP.VyfSxn8UuKv9YOu9dticxgHaHa?pid=ImgDet&rs=1"width="200" height="200" alt="">
+                            <div class="menu-content">
+                                <h5>risotto<span>$50</span></h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
